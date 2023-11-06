@@ -1,5 +1,17 @@
-template-repository (1.0-1) unstable; urgency=medium
+jupyter-comm (0.1.2-3) unstable; urgency=medium
 
-  * Initial release
+  * Fix Vcs fields
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jochen Sprickerhof <jspricke@debian.org>  Fri, 16 Dec 2022 19:38:07 +0100
+
+jupyter-comm (0.1.2-2) unstable; urgency=medium
+
+  * source only upload
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Fri, 16 Dec 2022 12:15:12 +0100
+
+jupyter-comm (0.1.2-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1026127)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Thu, 15 Dec 2022 08:42:18 +0100
