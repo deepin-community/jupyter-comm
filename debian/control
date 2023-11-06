@@ -1,15 +1,32 @@
-Source: template-repository
-Section: unknown
+Source: jupyter-comm
+Section: python
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Jochen Sprickerhof <jspricke@debian.org>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-hatchling,
+ python3-pytest <!nocheck>,
+ python3-setuptools,
+ python3-traitlets <!nocheck>,
+Testsuite: autopkgtest-pkg-pybuild
+Standards-Version: 4.6.1
+Homepage: https://github.com/ipython/comm
+Vcs-Browser: https://salsa.debian.org/python-team/packages/jupyter-comm
+Vcs-Git: https://salsa.debian.org/python-team/packages/jupyter-comm.git
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: python3-comm
+Architecture: all
+Depends:
+ ${python3:Depends},
+ ${misc:Depends},
+Description: Register a comm implementation in the Jupyter kernel (Python 3)
+ It provides a way to register a Kernel Comm implementation, as per the Jupyter
+ kernel protocol. It also provides a base Comm implementation and a default
+ CommManager that can be used.
+ .
+ This package installs the library for Python 3.
