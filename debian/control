@@ -2,7 +2,8 @@ Source: jupyter-comm
 Section: python
 Priority: optional
 Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: Jochen Sprickerhof <jspricke@debian.org>
+Uploaders: Jochen Sprickerhof <jspricke@debian.org>,
+ Roland Mas <lolando@debian.org>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
